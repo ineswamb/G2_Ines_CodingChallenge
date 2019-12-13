@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Page d'accueil*/
 body, html{
     margin :0;
     padding: 0;
@@ -46,54 +50,126 @@ body, html{
     display: none;
 }
 
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-}
 
-.content{
-    width: 1024px;
-    height: 500px;
-    background-color: white;
-    text-align: center;
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .links.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+/* Page Login */
+
+
+
+#container{
+    width:400px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+	
+   
 }
 
 h1{
-    font-size: 60px;
-    padding-top: 20%;
-    text-align: center;
-    color: black;
+  color: #B20000;
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-h2 {
-    font-weight: lighter;
-    font-size: 30px;
+h2{
+	color: #FFFFFF;
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+
+}
+.connexion {
+    width:100%;
+    padding: 50px;
+    border: 1px solid grey;
+    background-color: #000000;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 15px 15px 0 rgba(0, 0, 0, 0.24);
 }
 
-button{
-    background-color: #cc2626;
-    border-radius: 15px;
-    border: none;
-    color: white;
-    padding: 13px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+#container h1{
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+	
 }
 
-button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    padding: 15px 37px;
-    
+#container input{
+  background-color: #d5e2de;
+	border-radius: 2px;
+	
 }
 
+
+.email{
+  margin-left: 20%;
+  margin-bottom: 10%;
+}
+
+.login {
+  margin-left: 45%;
+	
+  margin-top: 10%;
+	
+  color: #000000;
+	
+  border-radius: 4px;
+	
+  font-family: 'Noto Sans KR', sans-serif;
+	
+	
+}
+
+
+.nom {
+	
+  margin-bottom: 10%;
+	
+  margin-left: 20%;
+}
+
+.mot_de_passe{
+	
+  margin-left: 20%;
+	
+  margin-bottom: 5%;
+}
+
+
+/*Page Contact*/
+
+
+/*Footer*/
 .foot {
     background-color: rgb(22, 22, 22); 
     width: 100vw;
@@ -137,45 +213,4 @@ button:hover{
   
 .upem a:hover{
     text-decoration: underline;
-}
-
-.second{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-}
-
-.card
-{
-	float: left;
-	width: 30%;
-	padding: 20px 2%;
-	background-color: #FFFFFF;
-	border: 3px solid;
-	border-color: #000000;
-	text-align: center;
-	margin: 1.5% 1.5%;
-	border-radius: 4px;
-		
-}
-
-.card-title
-{
-	font-size: 22px;
-	color: black;
-}
-
-.card-text
-{
-	font-size: 18px;
-}
-
-.third{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
 }

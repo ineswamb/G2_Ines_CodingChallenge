@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>signup</title>
+	<meta name="description" content="Inscrivez vous sur Cars CLub et profitez de nos offres"/>
+	<meta name="author" content="Tiffaine Willemin, Inès Wambersie"/>
+	<meta name="Keywords" content="inscription, location, voiture, luxe, journée, séminaires, exception, informations, vente, loisir"> 
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+</head>
+
+<body>
+<header>
+  <div class="navbar" id="nav">
+    <a href="../index.html"><img src="../images/logo.png" class="logo" alt="logo"></a>
+    <div class="links" id="mylinks"> 
+      <a href="service.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="bars.png" alt="bars">
+      </a>
+    </div>
+  </div>
+</header>
+	<div id="container">
+		
+		
+            <!-- sign up -->
+            <form class="connexion" name="form" action="">
+                <h1>Inscription</h1>            
+                <h2>Nom</h2>
+                   <input type="text" name="username" class="nom" value="" placeholder="Nom d'utilisateur">
+				<h2>Email</h2>
+                   <input type="text" name="username" class="email" value="" placeholder="Votre email">
+                <h2>Mot de passe</h2>
+                   <input type="password" name="password" class="mot_de_passe"  placeholder="Mot de passe" minlength="6" maxlength="12">
+                   <input class="login" type="submit" id="submit" value="Connexion" onclick="return controle();">
+            </form>
+  </div>
+	
+	<footer>
+  <div class="foot">
+    <div class="links2"> 
+      <a href="../index.html">Accueil</a>
+      <a href="service.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign up</a>
+    </div>
+    <div class="links3"> 
+      <a href="#"><img src="../images/fb.png" class="reseau" alt="Fb"></a>
+      <a href="#"><img src="../images/insta.png" class="reseau" alt="Insta"></a>
+        <a href="#"><img src="../images/twi.png" class="reseau" alt="Twi"></a>
+      <div class="upem">
+            <a href="http://www.u-pem.fr/">Lien vers le site de l'UPEM</a>
+      </div>
+    </div>
+  </div>
+</footer>	
+	
+</body>
+	
+	<script type="text/javascript" src="../js/index.js"></script>
+</html>
